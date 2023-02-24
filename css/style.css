@@ -58,6 +58,9 @@ ul {
   color: var(--white-text-color);
   text-align: center;
   text-transform: capitalize;
+  width: 496px;
+  margin:auto;
+
 }
 /* advantages */
 .advantages {
