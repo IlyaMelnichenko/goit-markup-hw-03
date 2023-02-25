@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="head-container">
+    <header class="header">
+      <div class="container head-container">
         <nav class="nav">
           <a class="logo" href="./index.html"
             ><span class="logo-span">Web</span>Studio</a
@@ -50,76 +50,80 @@
     </header>
     <main>
       <section class="solutions">
-        <h1 class="main-tittle">Effective Solutions for Your Business</h1>
-        <button class="button studio" type="button">Order Service</button>
+        <div class="container">
+          <h1 class="main-tittle">Effective Solutions for Your Business</h1>
+          <button class="button studio" type="button">Order Service</button>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="tittle visually-hidden">our advantages</h2>
-
-        <ul class="advantages-list">
-          <li>
-            <h3 class="sub-tittle">Strategy</h3>
-            <p class="text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="sub-tittle">Punctuality</h3>
-            <p class="text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li>
-            <h3 class="sub-tittle">Diligence</h3>
-            <p class="text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="sub-tittle">Technologies</h3>
-            <p class="text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="advantages-list">
+            <li>
+              <h3 class="sub-tittle">Strategy</h3>
+              <p class="text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li>
+              <h3 class="sub-tittle">Punctuality</h3>
+              <p class="text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li>
+              <h3 class="sub-tittle">Diligence</h3>
+              <p class="text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li>
+              <h3 class="sub-tittle">Technologies</h3>
+              <p class="text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="work-container">
-        <h2 class="tittle">What are we doing</h2>
-        <ul class="work-list">
-          <li>
-            <img
-              class="img"
-              src="./images/img1.jpg"
-              alt="monitor"
-              width="360"
-            />
-          </li>
-          <li>
-            <img
-              class="img"
-              src="./images/img2.jpg"
-              alt="telephones"
-              width="360"
-            />
-          </li>
-          <li>
-            <img
-              class="img"
-              src="./images/img3.jpg"
-              alt="monitor and telephone"
-              width="360"
-            />
-          </li>
-        </ul>
+      <section class="work">
+        <div class="container">
+          <h2 class="tittle">What are we doing</h2>
+          <ul class="work-list">
+            <li>
+              <img
+                class="img"
+                src="./images/img1.jpg"
+                alt="monitor"
+                width="360"
+              />
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./images/img2.jpg"
+                alt="telephones"
+                width="360"
+              />
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./images/img3.jpg"
+                alt="monitor and telephone"
+                width="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="team">
-        <div class="team-container">
+        <div class="container">
           <h2 class="tittle">Our Team</h2>
-
           <ul class="team-list">
             <li class="team-link">
               <img
@@ -127,13 +131,17 @@
                 alt="photo Mark Guerrero"
                 width="264"
               />
-              <h3 class="sub-tittle card">Mark Guerrero</h3>
-              <p class="text card">Product Designer</p>
+              <div class="team-card">
+                <h3 class="sub-tittle card">Mark Guerrero</h3>
+                <p class="text card">Product Designer</p>
+              </div>
             </li>
             <li class="team-link">
               <img src="./images/img(1).jpg" alt="photo Tom Ford" width="264" />
-              <h3 class="sub-tittle card">Tom Ford</h3>
-              <p class="text card">Frontend Developer</p>
+              <div class="team-card">
+                <h3 class="sub-tittle card">Tom Ford</h3>
+                <p class="text card">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-link">
               <img
@@ -141,8 +149,10 @@
                 alt="photo Camila Garcia"
                 width="264"
               />
-              <h3 class="sub-tittle card">Camila Garcia</h3>
-              <p class="text card">Marketing</p>
+              <div class="team-card">
+                <h3 class="sub-tittle card">Camila Garcia</h3>
+                <p class="text card">Marketing</p>
+              </div>
             </li>
             <li class="team-link">
               <img
@@ -150,15 +160,17 @@
                 alt="photo Daniel Wilson"
                 width="264"
               />
-              <h3 class="sub-tittle card">Daniel Wilson</h3>
-              <p class="text card">UI Designer</p>
+              <div class="team-card">
+                <h3 class="sub-tittle card">Daniel Wilson</h3>
+                <p class="text card">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="foot-container">
+      <div class="container">
         <a class="logo footers" href="./index.html"
           ><span class="logo-span">Web</span>Studio</a
         >

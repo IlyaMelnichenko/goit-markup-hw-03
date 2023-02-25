@@ -31,10 +31,16 @@ body {
 }
 a {
   text-decoration: none;
+  /* color:inherit; */
 }
 ul {
   list-style: none;
   padding: 0px;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -50,6 +56,11 @@ ul {
   margin: -1px;
 }
 /* main */
+.container{
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 .main-tittle {
   font-size: 56px;
@@ -68,9 +79,7 @@ ul {
   padding-bottom: 120px;
 }
 .advantages-list {
-  width: 1152px;
   display: flex;
-  padding: 0 12px;
   margin: auto;
 }
 .advantages-list li + li {
@@ -82,10 +91,7 @@ ul {
   padding: 188px 0px;
 }
 /* work */
-.work-container {
-  width: 1152px;
-
-  padding: 0 12px;
+.work {
   margin: auto;
   padding-bottom: 120px;
 }
@@ -97,18 +103,12 @@ ul {
 .work-list li + li {
   margin-left: 24px;
 }
-.img {
-  display: block;
-}
+
 
 /* Our Team */
 
-.team-container {
-  width: 1152px;
 
-  padding: 0 12px;
-  margin: auto;
-}
+
 .team-list {
   display: flex;
   margin-top: 72px;
@@ -124,6 +124,12 @@ ul {
 }
 .team-link {
   background-color: var(--white-text-color);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-card{
+  padding:32px 16px;
+  
 }
 .solutions {
   background-color: var(--primary-text-color);
@@ -134,26 +140,39 @@ ul {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.portfolio-container {
-  width: 1152px;
-  padding: 0 12px;
-  margin: auto;
-}
+
+
 .border {
   border-left: solid 1px;
   border-right: solid 1px;
   border-bottom: solid 1px;
   border-color: var(--cornflower-color);
-  padding: 32px 0px 32px 16px;
+  padding: 32px 16px 32px 16px;
+  
 }
 
 .content-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -24px -12px;
+  width: 100%;
+  /* margin: -24px -12px; */
 }
-.content-item {
-  margin: 24px 12px;
+.content-item{
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.content-item>a {
+  /* margin: 24px 12px; */
+  width:calc((100%-48px)/3);
+  /* width:360px; */
+ 
+}
+.content-item:nth-child(3n){
+  margin-right: 0px;
+}
+.content-item:nth-last-child(-n + 3){
+  margin-bottom: 0px;
 }
 
 .button-list {
@@ -161,7 +180,7 @@ ul {
   justify-content: center;
   margin-bottom: 72px;
 }
-.button-item:not(first-child) {
+.button-item:not(:first-child) {
   margin-left: 24px;
 }
 
@@ -175,7 +194,7 @@ ul {
   line-height: 1.5;
   cursor: pointer;
   border-radius: 4px;
-  border-color: transparent;
+  
 }
 
 .button.studio {
@@ -183,6 +202,7 @@ ul {
   background-color: var(--iris-color);
   padding: 16px 32px;
   margin: 48px auto 0px auto;
+  border-color:transparent;
 }
 .button.studio:hover,
 .button.studio:focus {
@@ -190,13 +210,17 @@ ul {
 }
 .button.portfolio {
   color: var(--iris-color);
-  background-color: var(--cornflower-color);
+  background-color:var(--cloud-background);
   padding: 12px 24px;
+  
+  border:solid 1px;
+  border-color: var(--cornflower-color);
 }
 .button.portfolio:hover,
 .button.portfolio:focus {
   color: var(--white-text-color);
   background-color: var(--ocen-color);
+  border-color: transparent;
 }
 .tittle {
   font-size: 36px;
@@ -211,9 +235,14 @@ ul {
   line-height: 1.2;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+  color:var(--primary-text-color)
+}
+.border>.sub-tittle{
+  margin-bottom:8px;
 }
 .card {
   text-align: center;
+  margin-top: 8px;
 }
 .text {
   font-size: 16px;
@@ -222,18 +251,17 @@ ul {
   color: var(--secondary-text-color);
 }
 /* header */
-
-.head-container {
-  margin: 0 auto;
-
-  width: 1152px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 12px;
+.header{
   border-bottom: solid 1px;
   border-color: var(--cornflower-color);
 }
+
+.head-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
 .nav {
   display: flex;
   align-items: center;
@@ -247,6 +275,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  padding: 24px 0;
+  display: block;
 }
 .logo-span {
   color: var(--iris-color);
@@ -261,12 +291,17 @@ ul {
 }
 .nav-link {
   display: block;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .list {
   display: flex;
 }
+.list-item>a{
+    padding: 24px 0;
+    display: block;
+}
+
 .list-item:last-child {
   margin-left: 40px;
 }
@@ -310,15 +345,13 @@ ul {
 }
 .footer {
   background-color: var(--primary-text-color);
+  padding: 100px 0px;
 }
 .current {
   color: var(--ocen-color);
 }
-.foot-container {
-  width: 1152px;
-  padding: 0 12px;
-  margin: auto;
-  justify-content: start;
+.logo.footers{
+  padding:0;
 
-  padding: 100px 0px;
 }
+
